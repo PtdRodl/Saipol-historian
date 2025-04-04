@@ -1,0 +1,386 @@
+{
+	"info": {
+		"_postman_id": "97ca009e-292c-4ed8-b659-377416968983",
+		"name": "Historian 8.1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3080978"
+	},
+	"item": [
+		{
+			"name": "REST - List Tags",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vd2luLWg1YjI0azg2OGNsL3VhYS90b2tlbl9rZXlzIiwia2lkIjoia2V5LWlkLTEiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiJmNmJlMzNiNTZkZTI0MGMyOGU2OGQ3Yjc4NDhlNjQ3YyIsInN1YiI6IjFmNTQ0Y2Q4LTk0NTItNGQ5YS05OTAxLWM4NjI1NzQ1NmU0MSIsInNjb3BlIjpbImhpc3Rvcmlhbl9yZXN0X2FwaS5yZWFkIiwiaGlzdG9yaWFuX3Jlc3RfYXBpLndyaXRlIiwiaGlzdG9yaWFuX2VudGVycHJpc2UudXNlciIsImhpc3Rvcmlhbl9yZXN0X2FwaS5hZG1pbiIsImhpc3Rvcmlhbl9lbnRlcnByaXNlLmFkbWluIl0sImNsaWVudF9pZCI6Imhpc3Rvcmlhbl9wdWJsaWNfcmVzdF9hcGkiLCJjaWQiOiJoaXN0b3JpYW5fcHVibGljX3Jlc3RfYXBpIiwiYXpwIjoiaGlzdG9yaWFuX3B1YmxpY19yZXN0X2FwaSIsInJldm9jYWJsZSI6dHJ1ZSwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6IjFmNTQ0Y2Q4LTk0NTItNGQ5YS05OTAxLWM4NjI1NzQ1NmU0MSIsIm9yaWdpbiI6InVhYSIsInVzZXJfbmFtZSI6IldJTi1INUIyNEs4NjhDTC5hZG1pbiIsImVtYWlsIjoiYWRtaW5AZ2UuY29tIiwiYXV0aF90aW1lIjoxNzI5NzczNTE5LCJyZXZfc2lnIjoiZGI1NGMyYWMiLCJpYXQiOjE3Mjk3NzM1MTksImV4cCI6MTcyOTgxNjcxOSwiaXNzIjoiaHR0cHM6Ly93aW4taDViMjRrODY4Y2wvdWFhL29hdXRoL3Rva2VuIiwiemlkIjoidWFhIiwiYXVkIjpbImhpc3Rvcmlhbl9lbnRlcnByaXNlIiwiaGlzdG9yaWFuX3B1YmxpY19yZXN0X2FwaSIsImhpc3Rvcmlhbl9yZXN0X2FwaSJdfQ.ofMIL7leVEcIYWLDWLEVlRV8P2ikYhds2Bd4v8DbflGNN6xm_9kJZk3jtZuWPm8zTuGoIGx9lcW0pXxOWQLuYqrMRp_NQUF5OQyY9uH3mwp6_QWGn-noIUjU-Vb0j2-5i8-8wg0Texr1q23kFLzwoB17FPEue241kBn_dgBzPcD-x_5aFw2o1JFI0e8BJD42LinA2E4Un-fukxjJ4bF0NYHlkDtSyNU9nm-EQatg4yyCf60IMrwmdfwe9L9TxAizUa7hGN8s2QH7tfLVhu9rD4rALD58zgyRolxtOhWy3T36mhVOKVxOytWPq6wnSwwh9uaLMGtAXmkQh1CjZvkJmw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://win-h5b24k868cl/historian-rest-api/v1/tags?nameMask=*&maxNumber=1000",
+					"protocol": "https",
+					"host": [
+						"win-h5b24k868cl"
+					],
+					"path": [
+						"historian-rest-api",
+						"v1",
+						"tags"
+					],
+					"query": [
+						{
+							"key": "nameMask",
+							"value": "*"
+						},
+						{
+							"key": "maxNumber",
+							"value": "1000"
+						}
+					]
+				},
+				"description": "List the historian tags"
+			},
+			"response": []
+		},
+		{
+			"name": "REST - Tag List by tagname",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vd2luLWg1YjI0azg2OGNsL3VhYS90b2tlbl9rZXlzIiwia2lkIjoia2V5LWlkLTEiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiI4MzU4ZGJmMDAzYjc0NmNhOWFiMGQ2NmQ0MmQwODc2NSIsInN1YiI6IjFmNTQ0Y2Q4LTk0NTItNGQ5YS05OTAxLWM4NjI1NzQ1NmU0MSIsInNjb3BlIjpbImhpc3Rvcmlhbl9yZXN0X2FwaS5yZWFkIiwiaGlzdG9yaWFuX3Jlc3RfYXBpLndyaXRlIiwiaGlzdG9yaWFuX2VudGVycHJpc2UudXNlciIsImhpc3Rvcmlhbl9yZXN0X2FwaS5hZG1pbiIsImhpc3Rvcmlhbl9lbnRlcnByaXNlLmFkbWluIl0sImNsaWVudF9pZCI6Imhpc3Rvcmlhbl9wdWJsaWNfcmVzdF9hcGkiLCJjaWQiOiJoaXN0b3JpYW5fcHVibGljX3Jlc3RfYXBpIiwiYXpwIjoiaGlzdG9yaWFuX3B1YmxpY19yZXN0X2FwaSIsInJldm9jYWJsZSI6dHJ1ZSwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6IjFmNTQ0Y2Q4LTk0NTItNGQ5YS05OTAxLWM4NjI1NzQ1NmU0MSIsIm9yaWdpbiI6InVhYSIsInVzZXJfbmFtZSI6IldJTi1INUIyNEs4NjhDTC5hZG1pbiIsImVtYWlsIjoiYWRtaW5AZ2UuY29tIiwiYXV0aF90aW1lIjoxNzI5NzgwNjQwLCJyZXZfc2lnIjoiZGI1NGMyYWMiLCJpYXQiOjE3Mjk3ODA2NDAsImV4cCI6MTcyOTgyMzg0MCwiaXNzIjoiaHR0cHM6Ly93aW4taDViMjRrODY4Y2wvdWFhL29hdXRoL3Rva2VuIiwiemlkIjoidWFhIiwiYXVkIjpbImhpc3Rvcmlhbl9lbnRlcnByaXNlIiwiaGlzdG9yaWFuX3B1YmxpY19yZXN0X2FwaSIsImhpc3Rvcmlhbl9yZXN0X2FwaSJdfQ.afZ7qBUfblXlC6NNy73WcZjh9KtN2veVfZdhNcheFdygKVhKBBIBa1ULA7F0dN2x3rkKLo8Ov4PlrWhbcNrLBr1AaTg2Y-5VaJPDAD3q4ZI67kTIIR1gjxD0U3nTZWUay-tvO4v6d5uB8pmfNF00miBms2GBlrGcvu_IDTUFiAbANNF4rLahg2jUpXQ_S87tgyIHzrejPpkTQ_JUQ0u_cToYmcjRXAIxe3wQy2EITzodoi7-TaMuF-0C9nliqNIVcYY1uuQsEfjHD58Rznxr2sqD062mV5lEZQseb-5jtDW_dsByFAE5JR3IKliLyd9pQcxcq-UNtMmqskG_P9BEjA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://win-h5b24k868cl/historian-rest-api/v1/tagslist?tagname=*&pagesize=500&pageno=2",
+					"protocol": "https",
+					"host": [
+						"win-h5b24k868cl"
+					],
+					"path": [
+						"historian-rest-api",
+						"v1",
+						"tagslist"
+					],
+					"query": [
+						{
+							"key": "tagname",
+							"value": "*"
+						},
+						{
+							"key": "pagesize",
+							"value": "500"
+						},
+						{
+							"key": "pageno",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REST - Get Current Value",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vREVTS1RPUC1MUEowSUpFL3VhYS90b2tlbl9rZXlzIiwia2lkIjoia2V5LWlkLTEiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiI0NzlkMWI5ZDFhZWM0NjM0YWMxZTRhMDcxNzljNzNlNSIsInN1YiI6IjU2YWNmN2FmLTQxZGUtNDMwYi1hOTY2LTQzYzJiNTg1NDVkMyIsInNjb3BlIjpbImhpc3Rvcmlhbl9yZXN0X2FwaS5hZG1pbiIsImhpc3Rvcmlhbl9yZXN0X2FwaS5yZWFkIiwiaGlzdG9yaWFuX3Jlc3RfYXBpLndyaXRlIl0sImNsaWVudF9pZCI6Imhpc3Rvcmlhbl9wdWJsaWNfcmVzdF9hcGkiLCJjaWQiOiJoaXN0b3JpYW5fcHVibGljX3Jlc3RfYXBpIiwiYXpwIjoiaGlzdG9yaWFuX3B1YmxpY19yZXN0X2FwaSIsInJldm9jYWJsZSI6dHJ1ZSwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6IjU2YWNmN2FmLTQxZGUtNDMwYi1hOTY2LTQzYzJiNTg1NDVkMyIsIm9yaWdpbiI6InVhYSIsInVzZXJfbmFtZSI6ImluZmx1eGRiMmhpc3RvcmlhbiIsImVtYWlsIjoiaW5mbHV4ZGIyaGlzdG9yaWFuQERFU0tUT1AtTFBKMElKRSIsImF1dGhfdGltZSI6MTYyMjEzOTUwMywicmV2X3NpZyI6ImQwODM5YTFiIiwiaWF0IjoxNjIyMTM5NTAzLCJleHAiOjE2MjIxODI3MDMsImlzcyI6Imh0dHBzOi8vREVTS1RPUC1MUEowSUpFL3VhYS9vYXV0aC90b2tlbiIsInppZCI6InVhYSIsImF1ZCI6WyJoaXN0b3JpYW5fcHVibGljX3Jlc3RfYXBpIiwiaGlzdG9yaWFuX3Jlc3RfYXBpIl19.MLkDJ3sGoIA6a43UiQdUqAD6TzrbGaU_Uy0EGWrXzf8ldEmgV3_Z3ti76mUox3itD0O_hIW_Gkka-ogphOq7oe59q8wve_J-IUAklF6CyS6gyVkDSHzrm6yGMwQRJ60YgFPVN5a30-zgqkTJz4Rc0p590WLxOwIANQUFdTIvrqUL9Pj0f8MXhpk6io5_wRuuqUj9jaKjeUoojA9xDg4OnaUcWR6dkfikFI1AbB8g3o6wRG-h6w5D715eawo_IEjw2KOGaoIensGc-Oun-uJYqKjKulJ2bIBZLwXQni4RDSZogFSrSskQIqzM7JNNrPxr9GdLn8KUpjIwxTwstmMKfA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://desktop-lpj0ije/historian-rest-api/v1/datapoints/currentvalue?tagNames=test",
+					"protocol": "https",
+					"host": [
+						"desktop-lpj0ije"
+					],
+					"path": [
+						"historian-rest-api",
+						"v1",
+						"datapoints",
+						"currentvalue"
+					],
+					"query": [
+						{
+							"key": "tagNames",
+							"value": "test"
+						}
+					]
+				},
+				"description": "Get the current value of a tag or a list of tags"
+			},
+			"response": []
+		},
+		{
+			"name": "UAA - Get Token Using User Password",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "publicapisecret",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "historian_public_rest_api",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "influxdb2historian",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "Ardtic2020",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "historian_public_rest_api",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "publicapisecret",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "token_format",
+							"value": "opaque",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "response_type",
+							"value": "token",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://win-h5b24k868cl/uaa/oauth/token?grant_type=password&username=win-h5b24k868cl.admin&password=Admin@rdtic2024",
+					"protocol": "https",
+					"host": [
+						"win-h5b24k868cl"
+					],
+					"path": [
+						"uaa",
+						"oauth",
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "password"
+						},
+						{
+							"key": "client_id",
+							"value": "historian_public_rest_api",
+							"disabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "publicapisecret",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "win-h5b24k868cl.admin"
+						},
+						{
+							"key": "password",
+							"value": "Admin@rdtic2024"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REST - Interpolated Values",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vd2luLWg1YjI0azg2OGNsL3VhYS90b2tlbl9rZXlzIiwia2lkIjoia2V5LWlkLTEiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiJhMjhlNjdlZTBkNmM0NjlmOGM5YjU2MzY1ODUzMDAzNSIsInN1YiI6IjFmNTQ0Y2Q4LTk0NTItNGQ5YS05OTAxLWM4NjI1NzQ1NmU0MSIsInNjb3BlIjpbImhpc3Rvcmlhbl9yZXN0X2FwaS5yZWFkIiwiaGlzdG9yaWFuX3Jlc3RfYXBpLndyaXRlIiwiaGlzdG9yaWFuX2VudGVycHJpc2UudXNlciIsImhpc3Rvcmlhbl9yZXN0X2FwaS5hZG1pbiIsImhpc3Rvcmlhbl9lbnRlcnByaXNlLmFkbWluIl0sImNsaWVudF9pZCI6Imhpc3Rvcmlhbl9wdWJsaWNfcmVzdF9hcGkiLCJjaWQiOiJoaXN0b3JpYW5fcHVibGljX3Jlc3RfYXBpIiwiYXpwIjoiaGlzdG9yaWFuX3B1YmxpY19yZXN0X2FwaSIsInJldm9jYWJsZSI6dHJ1ZSwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6IjFmNTQ0Y2Q4LTk0NTItNGQ5YS05OTAxLWM4NjI1NzQ1NmU0MSIsIm9yaWdpbiI6InVhYSIsInVzZXJfbmFtZSI6IldJTi1INUIyNEs4NjhDTC5hZG1pbiIsImVtYWlsIjoiYWRtaW5AZ2UuY29tIiwiYXV0aF90aW1lIjoxNzI4NTc1NDkxLCJyZXZfc2lnIjoiZGI1NGMyYWMiLCJpYXQiOjE3Mjg1NzU0OTMsImV4cCI6MTcyODYxODY5MywiaXNzIjoiaHR0cHM6Ly93aW4taDViMjRrODY4Y2wvdWFhL29hdXRoL3Rva2VuIiwiemlkIjoidWFhIiwiYXVkIjpbImhpc3Rvcmlhbl9lbnRlcnByaXNlIiwiaGlzdG9yaWFuX3B1YmxpY19yZXN0X2FwaSIsImhpc3Rvcmlhbl9yZXN0X2FwaSJdfQ.kZYemPi4UhYMb0YQyyFrut2xNBnPs9qa3Z1p7yr0thsAcU58IcDYgy7b2kLFEp5RXPokKnM1iGyRUfbNIORlKHvlvjIxEVXgND0IbCtm68zgEurFaVIPRM4UOPNYieqIui8OoFDWONObHIJs6NLqQMcT95YMOfsAx0cspMt8t3-r95Fn7n8yaCKTukDmKxRj6kXN2tRnjupOFJCx1FeOha3pgBlh10GhP4usxZqyP6f9mgryoFNTfxaKeMPmQy1Rl4sUGvoOlP2d-SJLc0QY60XFEffF0pWr3WAGPyVF2Ku36giuJtO2_JQUxL8M3-0aIqv7KQ2ruY0bCgWVeixuhg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://win-h5b24k868cl/historian-rest-api/v1/datapoints/interpolated/S1_074.DIGI_01_E_P_INDEX.F_CV/2024-03-30T00:00:00.000Z/2024-04-01T00:00:00.000000Z/0/120000",
+					"protocol": "https",
+					"host": [
+						"win-h5b24k868cl"
+					],
+					"path": [
+						"historian-rest-api",
+						"v1",
+						"datapoints",
+						"interpolated",
+						"S1_074.DIGI_01_E_P_INDEX.F_CV",
+						"2024-03-30T00:00:00.000Z",
+						"2024-04-01T00:00:00.000000Z",
+						"0",
+						"120000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REST - Raw Values",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vd2luLWg1YjI0azg2OGNsL3VhYS90b2tlbl9rZXlzIiwia2lkIjoia2V5LWlkLTEiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiIyMjE1NjNmZGZlZjc0OTE2OTgxMDNiNzY2MTA4N2E1NiIsInN1YiI6IjFmNTQ0Y2Q4LTk0NTItNGQ5YS05OTAxLWM4NjI1NzQ1NmU0MSIsInNjb3BlIjpbImhpc3Rvcmlhbl9yZXN0X2FwaS5yZWFkIiwiaGlzdG9yaWFuX3Jlc3RfYXBpLndyaXRlIiwiaGlzdG9yaWFuX2VudGVycHJpc2UudXNlciIsImhpc3Rvcmlhbl9yZXN0X2FwaS5hZG1pbiIsImhpc3Rvcmlhbl9lbnRlcnByaXNlLmFkbWluIl0sImNsaWVudF9pZCI6Imhpc3Rvcmlhbl9wdWJsaWNfcmVzdF9hcGkiLCJjaWQiOiJoaXN0b3JpYW5fcHVibGljX3Jlc3RfYXBpIiwiYXpwIjoiaGlzdG9yaWFuX3B1YmxpY19yZXN0X2FwaSIsInJldm9jYWJsZSI6dHJ1ZSwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6IjFmNTQ0Y2Q4LTk0NTItNGQ5YS05OTAxLWM4NjI1NzQ1NmU0MSIsIm9yaWdpbiI6InVhYSIsInVzZXJfbmFtZSI6IldJTi1INUIyNEs4NjhDTC5hZG1pbiIsImVtYWlsIjoiYWRtaW5AZ2UuY29tIiwiYXV0aF90aW1lIjoxNzI5NzEwMDcwLCJyZXZfc2lnIjoiZGI1NGMyYWMiLCJpYXQiOjE3Mjk3MTAwNzAsImV4cCI6MTcyOTc1MzI3MCwiaXNzIjoiaHR0cHM6Ly93aW4taDViMjRrODY4Y2wvdWFhL29hdXRoL3Rva2VuIiwiemlkIjoidWFhIiwiYXVkIjpbImhpc3Rvcmlhbl9lbnRlcnByaXNlIiwiaGlzdG9yaWFuX3B1YmxpY19yZXN0X2FwaSIsImhpc3Rvcmlhbl9yZXN0X2FwaSJdfQ.k47lOiJgAiWUKYfcgAmmNvPWOUD91HC5GmL9y9JNqVjNOJn9hqznJ3WQiaogPMfybRiPhu9iVp7zau8VgudEDwuDKPaI-h6qhhbjNXo-sKi2e3WQrzvSU5pUhKudO-69IpHgMCPWwVnaLm-rwgfLZwgnIAAcndxAgGZUdR8TS_Vb1JWMWaqyJEEt3p7v4G6-RPSS6VUOMujLMH53TvGK4SFvS0Km3tEzHbb4Chas6ZRyQQQ_WtMRzeEZIfPUP4nDg6uLw8aXrNqm0IAWPRZYgsyIKk8GpbY9AZafh9yL0_tGGJmhTpe2M-TfHtVGP3TOJn5TQIekFGqDExlLQyugSQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://win-h5b24k868cl/historian-rest-api/v1/datapoints/raw/S1_074.APIECH_MW00408.F_CV/2024-04-15T12:16:00.000Z/2024-05-31T00:00:00.000Z/0/5000",
+					"protocol": "https",
+					"host": [
+						"win-h5b24k868cl"
+					],
+					"path": [
+						"historian-rest-api",
+						"v1",
+						"datapoints",
+						"raw",
+						"S1_074.APIECH_MW00408.F_CV",
+						"2024-04-15T12:16:00.000Z",
+						"2024-05-31T00:00:00.000Z",
+						"0",
+						"5000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REST - Raw Values - TagNames in body",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vd2luLWg1YjI0azg2OGNsL3VhYS90b2tlbl9rZXlzIiwia2lkIjoia2V5LWlkLTEiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiI1NDNjYWNkNTY4ODI0YTMwOTMxMDZlNGI2ZTMxYzIzNiIsInN1YiI6IjFmNTQ0Y2Q4LTk0NTItNGQ5YS05OTAxLWM4NjI1NzQ1NmU0MSIsInNjb3BlIjpbImhpc3Rvcmlhbl9yZXN0X2FwaS5yZWFkIiwiaGlzdG9yaWFuX3Jlc3RfYXBpLndyaXRlIiwiaGlzdG9yaWFuX2VudGVycHJpc2UudXNlciIsImhpc3Rvcmlhbl9yZXN0X2FwaS5hZG1pbiIsImhpc3Rvcmlhbl9lbnRlcnByaXNlLmFkbWluIl0sImNsaWVudF9pZCI6Imhpc3Rvcmlhbl9wdWJsaWNfcmVzdF9hcGkiLCJjaWQiOiJoaXN0b3JpYW5fcHVibGljX3Jlc3RfYXBpIiwiYXpwIjoiaGlzdG9yaWFuX3B1YmxpY19yZXN0X2FwaSIsInJldm9jYWJsZSI6dHJ1ZSwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6IjFmNTQ0Y2Q4LTk0NTItNGQ5YS05OTAxLWM4NjI1NzQ1NmU0MSIsIm9yaWdpbiI6InVhYSIsInVzZXJfbmFtZSI6IldJTi1INUIyNEs4NjhDTC5hZG1pbiIsImVtYWlsIjoiYWRtaW5AZ2UuY29tIiwiYXV0aF90aW1lIjoxNzIxMjIyMjY2LCJyZXZfc2lnIjoiZGI1NGMyYWMiLCJpYXQiOjE3MjEyMjIyNjYsImV4cCI6MTcyMTI2NTQ2NiwiaXNzIjoiaHR0cHM6Ly93aW4taDViMjRrODY4Y2wvdWFhL29hdXRoL3Rva2VuIiwiemlkIjoidWFhIiwiYXVkIjpbImhpc3Rvcmlhbl9lbnRlcnByaXNlIiwiaGlzdG9yaWFuX3B1YmxpY19yZXN0X2FwaSIsImhpc3Rvcmlhbl9yZXN0X2FwaSJdfQ.XWDIgJwcdWABNc65bHJ_I2kzFj4jQ7oKngmOsAI4tn4cR0kM1QKIi24WcpHwkDppYIHm0tCVqsAcwqMxsuprBhLkNN--TTL17MkilyazUq2hdCA_yN6yn33mMyKUle1vJjEVl_TsMUShStz4GVGyGY-iXNKeoKnqEksTFAc7-ARu8BXcXjdYYnCot2dNfu8lpTVOXOVMLf0bHNBT3ab4BdGCtMOd_Telqhk9ztIA4wNhYHdmz0gzwNA7uSKK799yex2BdAiIskAw-4vfQt-5tFjpli62LJIEPSyyNP5v63npxvITEZsOliZFbndENnw3ctdUsW3WUS8oKoiM1vX55w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"tagNames\":\"GAL.GAL_OPC.GAL_PILOTES.PILOTES.CHD36.HISTO.Refrigerant / T° Zone Chaude N°2 / TT2_E1_RE36 / Valeur  Cœur (%)\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://win-h5b24k868cl/historian-rest-api/v1/datapoints/raw/2024-03-31T00:00:00.000000Z/2024-05-31T00:00:00.000000Z/0/5",
+					"protocol": "https",
+					"host": [
+						"win-h5b24k868cl"
+					],
+					"path": [
+						"historian-rest-api",
+						"v1",
+						"datapoints",
+						"raw",
+						"2024-03-31T00:00:00.000000Z",
+						"2024-05-31T00:00:00.000000Z",
+						"0",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

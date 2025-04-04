@@ -1,0 +1,20 @@
+[historian]
+host = "historian2025"
+username = "historian2025.admin"
+password = "PTD@rdtic2025"
+
+
+[task]
+frequency = 2
+
+
+[csv]
+directory = "C:/tmp/saipol"
+base_name = "INDUS-BAS-USSRVIFIX10"
+extension = "csv"
+float_precision = 0
+
+[tags]
+list = [
+        ".Simulation00001", 
+      ]
